@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="CalculadoraUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CalculadoraUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource SystemControlHighlightAltListAccentLowBrush}">
+    <Page.OpacityTransition>
+        <ScalarTransition/>
+    </Page.OpacityTransition>
+
+    
+
+
+
+        <Grid Background="{ThemeResource SystemControlHighlightListAccentLowBrush}" HorizontalAlignment="Center" Width="432" Height="768" VerticalAlignment="Bottom">
+        <TextBox x:Name="ResultBox" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="98" Width="412" Margin="0,82,0,0" FontSize="72" TextAlignment="Right"/>
+        <Button x:Name="Button1" Content="1" Margin="11,0,0,352" VerticalAlignment="Bottom" Height="89" Width="133" Background="Black" FontSize="36" Click="button_Click"/>
+        <Button x:Name="Button2" Content="2" Margin="0,327,149,0" VerticalAlignment="Top" Height="89" Width="133" HorizontalAlignment="Right" Background="Black" FontSize="36" Click="button_Copiar_Click"/>
+        <Button x:Name="Button3" Content="3" Margin="289,0,0,352" VerticalAlignment="Bottom" Height="89" Width="133" Background="Black" FontSize="36" Click="button_Copiar1_Click"/>
+        <Button x:Name="Button4" Content="4" Margin="11,0,0,255" VerticalAlignment="Bottom" Height="90" Width="133" Background="Black" FontSize="36" Click="Button4_Click"/>
+        <Button x:Name="Button5" Content="5" Margin="0,423,149,0" VerticalAlignment="Top" Height="90" Width="133" HorizontalAlignment="Right" Background="Black" FontSize="36" Click="Button5_Click"/>
+        <Button x:Name="Button6" Content="6" Margin="289,0,0,255" VerticalAlignment="Bottom" Height="90" Width="133" Background="Black" FontSize="36" Click="Button6_Click"/>
+        <Button x:Name="Button7" Content="7" Margin="11,0,0,158" VerticalAlignment="Bottom" Height="89" Width="133" Background="Black" FontSize="36" Click="Button7_Click"/>
+        <Button x:Name="Button8" Content="8" Margin="0,521,149,0" VerticalAlignment="Top" Height="89" Width="133" HorizontalAlignment="Right" Background="Black" FontSize="36" Click="Button8_Click"/>
+        <Button x:Name="Button9" Content="9" Margin="289,0,0,158" VerticalAlignment="Bottom" Height="89" Width="133" Background="Black" FontSize="36" Click="Button9_Click"/>
+        <Button x:Name="ButtonFloat" Content="." Margin="11,0,0,61" VerticalAlignment="Bottom" Height="90" Width="133" Background="Black" FontSize="36"/>
+        <Button x:Name="Button0" Content="0" Margin="0,617,149,0" VerticalAlignment="Top" Height="90" Width="133" HorizontalAlignment="Right" Background="Black" FontSize="36" Click="Button0_Click"/>
+        <Button x:Name="ButtonEqual" Content="=" Margin="289,0,0,61" VerticalAlignment="Bottom" Height="90" Width="133" Background="Black" FontSize="36" Click="ButtonEqual_Click"/>
+        <Button x:Name="ButtonPlus" Content="+" Margin="16,274,0,0" VerticalAlignment="Top" Width="96" Height="48" Background="#FF080707" Click="ButtonPlus_Click" FontSize="24"/>
+        <Button x:Name="ButtonMinus" Content="-" Margin="119,274,0,0" VerticalAlignment="Top" Width="96" Height="48" Background="#FF080707" FontSize="24" Click="ButtonMinus_Click"/>
+        <Button x:Name="ButtonMult" Content="*" Margin="223,274,0,0" VerticalAlignment="Top" Width="96" Height="48" Background="#FF080707" FontSize="24" Click="ButtonMult_Click"/>
+        <Button x:Name="ButtonDiv" Content="/" Margin="326,274,0,0" VerticalAlignment="Top" Width="96" Height="48" Background="#FF080707" FontSize="24" Click="ButtonDiv_Click"/>
+        <Button x:Name="ButtonC" Content="C" Margin="16,195,0,0" VerticalAlignment="Top" Width="96" Height="37" Background="#FF080707" Click="ButtonC_Click"/>
+        <Button x:Name="ButtonCE" Content="CE" Margin="326,195,0,0" VerticalAlignment="Top" Width="96" Height="37" Background="#FF080707" Click="ButtonCE_Click"/>
+        <TextBlock x:Name="OperationType" HorizontalAlignment="Left" Margin="11,58,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
